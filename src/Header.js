@@ -18,8 +18,12 @@ const Header = () => {
                 </div>
             </div>
             <div className={classes["Header__search"]}> 
+                    <div className={classes["Header__search__left"]}>
+                        <p>All</p>
+                        <ArrowDropDownIcon />
+                    </div>
                     <input className={classes["Header__search__input"]} type="text"/>
-                    {/* Logo */}
+                    {/* Logo */} 
                     <SearchIcon className={classes["Header__search__icon"]}/>
                 </div>
             <div className={classes.Header__nav}>
