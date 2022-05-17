@@ -1,5 +1,5 @@
 import classes from './MainNavigation.module.css'
-import kgf from "./logos/kgf.jpg"
+import navlogo from "./logos/downloadApp.jpg"
 import MenuIcon from '@material-ui/icons/Menu';
 
 const MainNavigation = () => {
@@ -7,13 +7,13 @@ const MainNavigation = () => {
         <div className={classes.navHeader}>
             <nav className={classes.nav}>
                 <ul>
-                    <div className={classes.left}>
+                    
                         <li class={classes.all}>
-                            <MenuIcon className={classes.hambergar}/>
+                            <MenuIcon className={`${classes.hambergar} ${classes.all}`} fontSize="inherit" />
                             All
                             {/* Navlinks will be added later */}
                         </li>
-                        <li>
+                        <li >
                             Best Seller
                         </li>
                         <li>
@@ -28,24 +28,24 @@ const MainNavigation = () => {
                         <li>
                             Fashion
                         </li>
-                        <li>
+                        <li className={classes.smallScreen}>
                             Electronics
                         </li>
-                        <li>
+                        <li className={classes.smallScreen}>
                             Prime
                         </li>
-                        <li>
+                        <li className={classes.smallScreen}>
                             Home & Kitchen
                         </li>
-                        <li>
+                        <li className={classes.smallScreen}>
                             Amazon Pay
                         </li>
-                        </div>
-                    <div className={classes.right}>
+                        
+                    
                         <li>
-                            <img src={kgf} alt = "rental" className={classes.right}/>
+                            <img src={navlogo} alt = "rental" className={classes.right}/>
                         </li>
-                    </div>
+                   
                 </ul>
             </nav>
         </div>

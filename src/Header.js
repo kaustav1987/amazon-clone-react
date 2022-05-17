@@ -24,7 +24,7 @@ const Header = () => {
                     </div>
                     <input className={classes["Header__search__input"]} type="text"/>
                     {/* Logo */} 
-                    <SearchIcon className={classes["Header__search__icon"]}/>
+                    <SearchIcon className={ classes.Header__search__icon  }  />
                 </div>
             <div className={classes.Header__nav}>
                 <div className={classes.Header__nav__option}>
