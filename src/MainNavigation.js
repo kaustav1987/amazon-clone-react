@@ -8,7 +8,7 @@ const MainNavigation = () => {
             <nav className={classes.nav}>
                 <ul>
                     
-                        <li class={classes.all}>
+                        <li className={classes.all}>
                             <MenuIcon className={`${classes.hambergar} ${classes.all}`} fontSize="inherit" />
                             All
                             {/* Navlinks will be added later */}
