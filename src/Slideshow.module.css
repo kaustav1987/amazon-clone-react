@@ -1,13 +1,14 @@
 .Slideshow{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     overflow: hidden;
-    max-width: 2000px;
-    display: flex;
-}
+    /* max-width: 2000px;
+    display: flex; */
+} 
 
 .SlideshowSlider{
     white-space: nowrap;
     transition: ease 1000ms;
+
 }
 
 .slide{

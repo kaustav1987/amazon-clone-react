@@ -27,7 +27,7 @@ const Slideshow = ()=> {
     }
 
     return(
-        <div className={classes.Slideshow}>
+        <div className={classes.Slideshow} >
             <KeyboardArrowLeftIcon className={classes.arrowLeft} style={{fontSize:"5rem", fontWeight:50 }} onClick={leftArrowHandler}/>
             <div className={classes.SlideshowSlider}
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>

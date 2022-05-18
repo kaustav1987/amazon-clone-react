@@ -2,7 +2,8 @@ import { Fragment } from 'react';
 import './App.css';
 import Header from './Header';
 import MainNavigation from './MainNavigation';
-import Slideshow from './Slideshow';
+import Home from './Pages/Home';
+
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <Fragment>
       <Header />
       <MainNavigation />
-      <Slideshow/>
+      <Home/>
     </Fragment>
   );
 }

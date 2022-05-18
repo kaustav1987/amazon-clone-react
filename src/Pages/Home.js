@@ -1,6 +1,11 @@
+import Slideshow from '../Slideshow';
+import classes from "./Home.module.css"
+
 const Home = () => {
     return (
-        <Products />
+        <div className={classes.Home}>
+            <Slideshow />
+        </div>
     )
 }
 
