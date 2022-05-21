@@ -5,11 +5,14 @@ import AddLocationOutlinedIcon from '@material-ui/icons/AddLocationOutlined';
 import SearchIcon from '@material-ui/icons/Search';
 import AddShoppingCartOutlinedIcon from '@material-ui/icons/AddShoppingCartOutlined';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
         <div className={classes["Header"]}>
+            <Link to={"/"} >
             <img src={amazon} alt="amazon" className={classes["Header__logo"]} />
+            </Link>
             <div className={classes["Header__location"]}>
                 <AddLocationOutlinedIcon className={classes["Header__location__icon"]}/>
                 <div className={classes["Header__location__text"]}>
@@ -45,14 +48,17 @@ const Header = () => {
                     <span className={classes.Header__nav__option__lineOne}>Returns</span>
                     <span className={classes.Header__nav__option__lineTwo}>& Orders</span>
                 </div>
+                <Link to={"/checkout"}  style={{ color: 'inherit', textDecoration: 'none' }} className={classes.cartLink}>
                 <div className={classes.Header__nav__option}>
                     <span className={classes.Header__nav__option__lineOne}></span>
                     <AddShoppingCartOutlinedIcon />
                 </div>
+                
                 <div className={classes.Header__nav__option}>
                     <span className={classes.Header__nav__option__lineOne}> 0</span>
                     <span className={classes.Header__nav__option__lineTwo}>Cart</span>
                 </div>
+                </Link>
             </div>
         </div>
 

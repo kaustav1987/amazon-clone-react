@@ -1,5 +1,5 @@
 .Header{
-    height: 8vmax;
+    height: 6rem;
     width:100%;
     position: fixed;
     display: flex;
@@ -42,13 +42,16 @@
     padding-top: 2vmax;
     font-size: 1vmax;
 } */
+.cartLink{
+    display: flex;
+}
 
 
 .Header__nav{
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
-color:#FFFFFF;
+color:#FFFFFF ; 
 margin: 5px 20px;
 align-items: center;
 }
@@ -120,8 +123,22 @@ font-weight: 800;
     /* border: 2PX solid RED; */
     /* height: 4vmax; */
     width: 2vmax;
-    height: 2vmax;
-    height: 4vmax !important;
+    /* height: 2vmax; */
+    height: 3.5rem !important;
+}
+
+.Header__search__icon{
+    background-color: #FEBD69;
+    color:#131921;
+
+    /* padding: 0.4vmax; */
+    height: 2.3rem !important;
+    /* width: 2vmax;
+    height: 5vmax; */
+    /* padding-bottom: auto; */
+    /* padding-bottom: 5px; */
+    border-top-right-radius: 0.2vmax;
+    border-bottom-right-radius: 0.2vmax;
 }
 
 .Header__search__left{
@@ -146,18 +163,21 @@ font-weight: 800;
     
 } */
 
-.Header__search__icon{
-    background-color: #FEBD69;
-    color:#131921;
 
-    /* padding: 0.4vmax; */
-    height: 4vmax !important;
-    /* width: 2vmax;
-    height: 5vmax; */
-    /* padding-bottom: auto; */
-    /* padding-bottom: 5px; */
-    border-top-right-radius: 0.2vmax;
-    border-bottom-right-radius: 0.2vmax;
+
+.Header__search__input{
+    /* height: 12px;
+    padding: 10px;
+    width:70%;
+    min-width: 150px; */
+    width:40vmax;
+    /* padding: 1.55vmax; */
+    /* height: 2.95vmax; */ 
+    /* height: 2vmax !important;  */
+    /* line-height: 10vmax; */
+}
+.beside{
+    display: none;
 }
 
 }
@@ -205,7 +225,21 @@ font-weight: 800;
         /* height: 4vmax; */
         width: 2vmax;
         /* height: 2vmax; */
-        height: 2vmax !important;
+        height: 3.5rem !important;
+    }
+
+    .Header__search__icon{
+        background-color: #FEBD69;
+        color:#131921;
+    
+        /* padding: 0.4vmax; */
+        height: 2.4rem !important;
+        /* width: 2vmax;
+        height: 5vmax; */
+        /* padding-bottom: auto; */
+        /* padding-bottom: 5px; */
+        border-top-right-radius: 0.2vmax;
+        border-bottom-right-radius: 0.2vmax;
     }
     
     .Header__search__left{
@@ -239,19 +273,5 @@ font-weight: 800;
         border: 2px solid red;
         
     } */
-    
-    .Header__search__icon{
-        background-color: #FEBD69;
-        color:#131921;
-    
-        /* padding: 0.4vmax; */
-        height: 2vmax !important;
-        /* width: 2vmax;
-        height: 5vmax; */
-        /* padding-bottom: auto; */
-        /* padding-bottom: 5px; */
-        border-top-right-radius: 0.2vmax;
-        border-bottom-right-radius: 0.2vmax;
-    }
     
 }
