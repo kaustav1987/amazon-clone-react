@@ -1,0 +1,126 @@
+.checkoutProduct{
+    display: flex;
+    border: 1px solid #DDDDDD;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+.CheckoutProduct__img{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+}
+
+.checkoutProduct__details{
+    display: flex;
+    flex-direction: column;
+}
+
+.CheckoutProduct__inStock{
+    color: #007631;
+}
+
+.CheckoutProduct__info{
+    margin: 0px;
+}
+
+
+
+.CheckoutProduct__price_details{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkoutProduct__checkbox{
+    max-width: 10px;
+    /* padding: 2px; */
+    padding-top: 4rem;
+}
+
+
+/* .CheckoutProduct__quantityButton{
+    border-radius: 3px !important;
+    border: none;
+} */
+
+/* .checkoutProduct__button_div{
+    border-radius: 3px !important;
+    padding: none;
+}   */
+
+
+
+.checkoutProduct__button_div{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+@media only screen and (min-width: 1000px) {
+    /* Desktop */
+    .CheckoutProduct__info{
+        font-size: 1.4vw;
+    }
+    .CheckoutProduct__price{
+        font-weight: 500;
+        font-size: 1.4vw;
+        margin: 0px;
+    }
+    .checkoutProduct__button_div > button{
+        background: #F0F2F2;
+        border-radius: 4px !important;
+        border: 1px solid #CCD0D0;
+    }
+    .DeleteAndSaveForLater{
+        padding-left: 1rem;
+        padding-top: 0.2rem;
+        color: #007185;
+        cursor: pointer;
+    }
+
+    .checkoutProduct__button_div{
+        font-size: 1vm;
+    }
+    .DeleteAndSaveForLater:hover{
+        text-decoration: underline;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    /* Mobile */
+    .CheckoutProduct__info{
+        font-size: 4vw;
+    }
+    .CheckoutProduct__price{
+        font-weight: 500;
+        font-size: 4vw;
+        margin: 0px;
+    }
+
+    .checkoutProduct__button_div > button{
+        background: #F0F2F2;
+        border-radius: 4px !important;
+        border: 1px solid #CCD0D0;
+        font-size: 2vw;
+        max-width: 15vw;
+        max-height: 3vh;
+    }
+    .arrowDropDown{
+        font-size: 2vw;
+    }
+    .DeleteAndSaveForLater{
+        padding-left: 1rem;
+        padding-top: 0.2rem;
+        color: #007185;
+        cursor: pointer;
+        font-size: 2vw;
+    }
+    
+    .DeleteAndSaveForLater:hover{
+    text-decoration: underline;
+    }
+}

@@ -19,6 +19,9 @@
 
 }
 
+.Subtotal >button:hover{
+    background:#ecab08;
+}
 
 .Subtotal__gift{
     /* align-items: center;
@@ -36,6 +39,7 @@
     color: #111 */
     background: #f0c14b;
     border-radius: 4px;
+    max-width: 190px;
 }
 
 @media only screen and (max-width: 1000px) {

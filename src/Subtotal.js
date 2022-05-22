@@ -1,14 +1,19 @@
 import CurrencyFormat from "react-currency-format";
 import classes from "./Subtotal.module.css";
+import { useSelector } from 'react-redux';
 
 const Subtotal= () => {
+
+    const totalQuantity = useSelector(state => state.cart.totalQuantity);
+    const totalPrice = useSelector(state => state.cart.totalPrice);
+    
     return (
         <div className={classes.Subtotal}>
             <CurrencyFormat
                 renderText={(value)=>{return (
                     <>
                         <p className={classes.Subtotal__text}>
-                            Subtotal ({"0"}) Items <strong>{value}</strong>
+                            Subtotal ({totalQuantity}) Items <strong>{value}</strong>
                         </p>
                         <small className={classes.Subtotal__gift}>
                             <input type="checkbox" /> This order contains a gift
@@ -16,12 +21,12 @@ const Subtotal= () => {
                     </>
                 )}}
                 decimalScale={2}
-                value={0}
+                value={totalPrice}
                 displayType={"text"}
                 thousandSeparator={true}
                 prefix={"₹"}
             />
-            <button>Proceed to Checkout</button>
+            <button className={classes.checkout_button}>Proceed to Checkout</button>
         </div>
         
     )

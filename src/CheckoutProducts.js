@@ -1,14 +1,14 @@
 import { useSelector } from "react-redux";
+import CheckoutProduct from "./CheckoutProduct";
+import classes from "./CheckoutProducts.module.css";
 
 const CheckoutProducts = ()=> {
     const products = useSelector(state=> state.cart.products)
     console.log(products);
     return (
-    <ul>
-        <h2>The Checkout Products</h2>
-        <li>Product1</li>
-        <li>Product2</li>
-    </ul>
+        <div className={classes.CheckoutProducts}>
+            {products.map( (product,index) => <CheckoutProduct product={product} key={index} />)}
+        </div>
     )
 }
 
