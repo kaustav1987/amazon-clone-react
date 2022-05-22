@@ -1,4 +1,8 @@
+import { useSelector } from "react-redux";
+
 const CheckoutProducts = ()=> {
+    const products = useSelector(state=> state.cart.products)
+    console.log(products);
     return (
     <ul>
         <h2>The Checkout Products</h2>

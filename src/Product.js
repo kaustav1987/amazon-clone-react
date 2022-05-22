@@ -1,9 +1,23 @@
 // import { Info } from "@material-ui/icons";
+import { useDispatch } from "react-redux";
 import classes from "./Product.module.css";
+import { cartActions } from "./store/cart-slice";
 
 
 const Product = (props)=> {
-    const {info,price,rating,img} = props.product;
+    const {id,info,price,rating,img} = props.product;
+    const dispatch = useDispatch();
+
+    const addToCartHandler = (event)=>{
+        event.preventDefault();
+        dispatch(cartActions.addToCart({
+            id:id,
+            info:info,
+            price:price,
+            rating: rating,
+            img: img
+        }));
+    }
 
     return(
         <div className={classes.Product}>
@@ -20,7 +34,7 @@ const Product = (props)=> {
                 </div>
             </div>
             <img src={img} alt="Product" />
-            <button>Add to Basket</button>
+            <button onClick={addToCartHandler}>Add to Basket</button>
         </div>
         
 )
