@@ -34,7 +34,7 @@ const Product = (props)=> {
                 </div>
             </div>
             <img src={img} alt="Product" />
-            <button onClick={addToCartHandler}>Add to Basket</button>
+            <button onClick={addToCartHandler}>Add to Cart</button>
         </div>
         
 )

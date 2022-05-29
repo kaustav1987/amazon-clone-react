@@ -28,6 +28,16 @@
 
 }
 
+.remove_material_ui_Style{
+    color: inherit;
+    text-decoration: none;
+}
+
+.remove_material_ui_Style:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
 .Header__location__icon{
     margin-top:1rem;
 

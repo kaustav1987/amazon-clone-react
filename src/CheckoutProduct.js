@@ -1,8 +1,14 @@
 import classes from "./CheckoutProduct.module.css"
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { useDispatch } from "react-redux";
+import { cartActions } from "./store/cart-slice";
 
 const CheckoutProduct = (props)=> {
-    const {info, price,img,quantity }= props.product;
+    const {id, info, price,img,quantity }= props.product;
+    const dispatch = useDispatch();
+    const deleteHandler = () =>{
+        dispatch(cartActions.deleteFromCart(id));
+    }
     return(
         <div className={` ${classes.checkoutProduct} row`}>
                 <div className={` ${classes.checkoutProduct__checkbox} col-1 col-sm-1`}>
@@ -19,11 +25,16 @@ const CheckoutProduct = (props)=> {
                     <small className={classes.CheckoutProduct__inStock}>In Stock</small>
                     <div className={`${classes.checkoutProduct__button_div} col-12`}>
                         <button className={classes.CheckoutProduct__quantityButton}>Qty {quantity} <ArrowDropDownIcon className={classes.arrowDropDown} /> </button>
-                        <p className={classes.DeleteAndSaveForLater}>Delete</p>
+                        <p className={classes.DeleteAndSaveForLater} onClick={deleteHandler}>Delete</p>
                         <p className={classes.DeleteAndSaveForLater}>Save for Later</p>
                     </div>
-                    
+                    {/* <div>
+                    <div className={`${classes.checkoutProduct__toggle} `} data-toggle="popover" data-container="body" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Max quantity set by seller is 2</div>
+                    <button className={`${classes.checkoutProduct__toggle__close} `}>X</button>
+                    </div> */}
+                   
             </div>
+
 
 
     </div>

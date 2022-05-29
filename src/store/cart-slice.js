@@ -28,7 +28,7 @@ const cartSlice = createSlice({
             state.totalPrice= state.totalPrice+newProduct.price;
             state.totalQuantity++;
         },
-        removeFromCart(state,actions){
+        deleteFromCart(state,actions){
             const existingProductId = actions.payload;
             const existingProduct= state.products.find((product)=> product.id ===existingProductId);
             if(existingProduct.quantity===1){
@@ -39,6 +39,7 @@ const cartSlice = createSlice({
             }
             state.totalPrice= state.totalPrice - existingProduct.price;
             state.totalQuantity--;
+            //console.log(state.totalQuantity)
         }
     }
 }

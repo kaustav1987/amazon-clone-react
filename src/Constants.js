@@ -18,3 +18,7 @@ export const products = [
     {id:6,info:"boAt Airdopes 141", price:1399,rating:5,img:"https://m.media-amazon.com/images/I/51HBom8xz7L._SY450_.jpg"},
     {id:7,info:"AmazonBasics Cast Iron Hexagon Dumbbell", price:2899,rating:5,img:"https://m.media-amazon.com/images/I/81NwQ38vKTL._SX425_.jpg"}
 ]
+
+export const SIGNUP_URL = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCyye1vmBqXW5nzElK8R8crduZxAzx-U_c"
+export const SIGNIN_URL = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCyye1vmBqXW5nzElK8R8crduZxAzx-U_c"
+export const expireIn= 3000;

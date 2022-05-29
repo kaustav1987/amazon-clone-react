@@ -58,6 +58,14 @@
     
 }
 
+.checkoutProduct__toggle{
+    z-index: 10;
+}
+
+
+.checkoutProduct__toggle__close{
+    float: right;
+}
 
 @media only screen and (min-width: 1000px) {
     /* Desktop */

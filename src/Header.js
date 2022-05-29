@@ -6,8 +6,18 @@ import SearchIcon from '@material-ui/icons/Search';
 import AddShoppingCartOutlinedIcon from '@material-ui/icons/AddShoppingCartOutlined';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { Link } from "react-router-dom";
+import {useSelector } from "react-redux";
 
 const Header = () => {
+
+    const totalQuantity = useSelector(state=> state.cart.totalQuantity);
+
+    const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
+    const email = useSelector(state => state.auth.email);
+
+    // const signOut= () => {
+    //     dispatch(authActions.logoff());
+    // }
     return (
         <div className={classes["Header"]}>
             <Link to={"/"} >
@@ -37,25 +47,28 @@ const Header = () => {
                     <ArrowDropDownIcon />
                     </div>
                 </div>
+                <Link to={"/auth"}   className={`${classes.remove_material_ui_Style}`}>
                 <div className={classes.Header__nav__option}>
-                    <span className={classes.Header__nav__option__lineOne}>Hello, Sign In</span>
+                    {!isAuthenticated && <span className={classes.Header__nav__option__lineOne}>Hello, Sign In</span>}
+                    {isAuthenticated && <span className={classes.Header__nav__option__lineOne}>{email}, Sign Out</span>}
                     <div className={classes.beside}>
                         <span className={classes.Header__nav__option__lineTwo}>Accounts & List</span>
                         <ArrowDropDownIcon />
                     </div>
                 </div>
+                </Link>
                 <div className={classes.Header__nav__option}>
                     <span className={classes.Header__nav__option__lineOne}>Returns</span>
                     <span className={classes.Header__nav__option__lineTwo}>& Orders</span>
                 </div>
-                <Link to={"/checkout"}  style={{ color: 'inherit', textDecoration: 'none' }} className={classes.cartLink}>
+                <Link to={"/checkout"}   className={`${classes.cartLink} ${classes.remove_material_ui_Style}`}>
                 <div className={classes.Header__nav__option}>
                     <span className={classes.Header__nav__option__lineOne}></span>
                     <AddShoppingCartOutlinedIcon />
                 </div>
                 
                 <div className={classes.Header__nav__option}>
-                    <span className={classes.Header__nav__option__lineOne}> 0</span>
+                    <span className={classes.Header__nav__option__lineOne}>{totalQuantity}</span>
                     <span className={classes.Header__nav__option__lineTwo}>Cart</span>
                 </div>
                 </Link>

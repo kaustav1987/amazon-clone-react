@@ -23,6 +23,13 @@
     background:#ecab08;
 }
 
+.Product > button:active {
+    background-color: #FFD814;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+
+
 .Subtotal__gift{
     /* align-items: center;
     padding-left: 10px; */
@@ -37,10 +44,18 @@
     margin-bottom: 1vmax;
     border-color: #a88734;
     color: #111 */
-    background: #f0c14b;
+    /* background: #f0c14b;  */
+    background: #FFD814;
     border-radius: 4px;
     max-width: 190px;
 }
+
+.Subtotal > button:active {
+    background-color: #FFD814;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+
 
 @media only screen and (max-width: 1000px) {
     /* Mobile */

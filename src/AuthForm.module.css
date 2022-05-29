@@ -1,0 +1,164 @@
+.padding__form__switch{
+    padding: 14px 12px;
+    /* border: 1px solid #b5b5b5;
+    border-radius: 4px;  */
+}
+
+.switch__text{
+    padding-left: 8vw;
+    padding-right: auto;
+    color: #767676;
+    font-size: 12px;
+
+
+}
+
+.error{
+    color: rgb(190, 19, 19);
+    font-weight: 500;
+}
+
+.switch__button{
+background-color: #f3f3f3;
+border-color: #f3f1f1;
+width: 85%;
+cursor: pointer;
+max-width: 370px;
+margin-left: 18px; 
+margin-right: 18px;
+}
+
+.disclaimer{
+    font-size: 11px;
+
+}
+
+.showPassword{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.authform{
+border: 1px solid #b5b5b5;
+border-radius: 4px; 
+padding: 14px 18px;
+    /* align-items: center; */
+    max-width: 420px;
+
+}
+
+.alignment{
+    background-color: #232f3e;
+}
+
+.authform >input{
+    border: 1px solid #a6a6a6;
+    border-top-color: hsl(0, 0%, 58%);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    padding: 3px 7px;
+    background-color: #FFFFFF;
+    /* line-height:31px !important; */
+    
+}
+
+.button{
+    background-color: #f1c659;
+    width: 100%;
+    border-radius: 3px;
+    max-width: 370px;
+    margin-top: 15px;
+    border: 1px solid #f6c241;
+}
+
+.button:focus{
+    border: 1px solid #ec9234;
+    box-shadow: 0 0 10px #ec9234;
+}
+
+/* .button:hover{
+    background-color: #f4bc31;
+    cursor: pointer;
+} */
+
+
+
+.authform__input{
+    /* border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    padding: 3px 7px;
+    background-color: #FFFFFF; */
+    line-height:31px;
+    border-radius: 3px;
+    border: 1px solid #a6a6a6;
+    max-width: 370px;
+
+}
+
+.authform__input:focus{
+    outline: none !important;
+    border: 1px solid #ec9234 !important;
+    box-shadow: 0 0 10px #ec9234;
+}
+
+/* .authform >input:active{
+    border:1px solid #f5c240;
+} */
+
+.Form__header_font{
+    /* font-size: 3vw; */
+    color: #111111;
+    max-width: 28px;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.form__control{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* .Amazon__logo{
+    
+    display: flex; 
+    align-items: left; 
+    justify-content: left;
+    flex-direction: column;
+} */
+
+
+
+.Amazon__logo__img{
+    margin: 0 auto;text-align: center;
+    max-height: 3vw;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Desktop */
+    .Amazon__logo__img{
+        margin: 0 auto;text-align: center;
+        max-height: 8vw;
+        object-fit: contain;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Desktop */
+    .padding__form{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        
+    }
+
+    .disclaimer{
+        font-size: 13px;
+    
+    }
+}
